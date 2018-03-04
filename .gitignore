@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.gitattributes
+
+*.d
+*.o
+Test.player
+tinymudserver
