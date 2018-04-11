@@ -80,13 +80,13 @@ void DoDirection (tPlayer * p, const string & sArgs)
  tExitMap::const_iterator exititer = r->exits.find (sArgs);    
 
   if (exititer == r->exits.end ())
-    throw runtime_error ("You cannot go that way.");
+    throw runtime_error ("Du kannst hier nicht lang gehen.");
 
   // move player
   PlayerToRoom (p, exititer->second,
-                "You go " + sArgs + "\n",
-                p->playername + " goes " + sArgs + "\n",
-                p->playername + " enters.\n");
+                "Du gehst hierhin: " + sArgs + "\n",
+                p->playername + " geht hierhin: " + sArgs + "\n",
+                p->playername + " betritt den Raum.\n");
   
   } // end of DoDirection
   
@@ -100,9 +100,9 @@ void DoQuit (tPlayer * p, istream & sArgs)
   
   if (p->connstate == ePlaying)
     {
-    *p << "See you next time!\n";
-    cout << "Player " << p->playername << " has left the game.\n";
-    SendToAll ("Player " + p->playername + " has left the game.\n", p);   
+    *p << "Bis bald!\n";
+    cout << " " << p->playername << " hat das Kliemannsland verlassen.\n";
+    SendToAll (" " + p->playername + " hat das Kliemannsland verlassen.\n", p);   
     } /* end of properly connected */
 
   p->ClosePlayer ();
@@ -110,7 +110,7 @@ void DoQuit (tPlayer * p, istream & sArgs)
 
 void lookObject (tPlayer * p, string & which)
   {
-  *p << "Looking at object " << which << "\n";
+  *p << "Du guckst auf " << which << "\n";
 
   // scan available objects and display information about them ...
   }  // end of lookObject
@@ -141,7 +141,7 @@ void DoLook (tPlayer * p, istream & sArgs)
   // show available exits
   if (!r->exits.empty ())
     {
-    *p << "Exits: ";
+    *p << "Weiter: ";
     for (tExitMap::const_iterator exititer = r->exits.begin ();
          exititer != r->exits.end (); ++exititer)
       *p << exititer->first << " ";
@@ -161,7 +161,7 @@ void DoLook (tPlayer * p, istream & sArgs)
         otherp->room == p->room)  // need to be in same room
       {
       if (iOthers++ == 0)
-        *p << "You also see ";
+        *p << "Ausserdem siehst du ";
       else
         *p << ", ";
       *p << otherp->playername;
@@ -181,8 +181,8 @@ void DoSay (tPlayer * p, istream & sArgs)
 {
   p->NeedNoFlag ("gagged"); // can't if gagged
   string what = GetMessage (sArgs, "Say what?");  // what
-  *p << "You say, \"" << what << "\"\n";  // confirm
-  SendToAll (p->playername + " says, \"" + what + "\"\n", 
+  *p << "Du sagst, \"" << what << "\"\n";  // confirm
+  SendToAll (p->playername + " sagt, \"" + what + "\"\n", 
             p, p->room);  // say it
 } // end of DoSay 
 
@@ -193,14 +193,14 @@ void DoTell (tPlayer * p, istream & sArgs)
   p->NeedNoFlag ("gagged"); // can't if gagged
   tPlayer * ptarget = p->GetPlayer (sArgs, "Tell whom?", true);  // who
   string what = GetMessage (sArgs, "Tell " + p->playername + " what?");  // what  
-  *p << "You tell " << p->playername << ", \"" << what << "\"\n";     // confirm
-  *ptarget << p->playername << " tells you, \"" << what << "\"\n";    // tell them
+  *p << "Du sagst " << p->playername << ", \"" << what << "\"\n";     // confirm
+  *ptarget << p->playername << " sagt dir, \"" << what << "\"\n";    // tell them
 } // end of DoTell
 
 void DoSave  (tPlayer * p, istream & sArgs)
 {
   p->Save ();
-  *p << "Saved.\n";  
+  *p << "Gespeichert.\n";  
 }
 
 void DoChat (tPlayer * p, istream & sArgs)
@@ -219,7 +219,7 @@ void DoEmote (tPlayer * p, istream & sArgs)
 void DoWho (tPlayer * p, istream & sArgs)
 {
   NoMore (p, sArgs);  // check no more input
-  *p << "Connected players ...\n";
+  *p << "Verbundene Spieler ...\n";
   
   int count = 0;
   for (tPlayerListIterator iter = playerlist.begin ();
@@ -230,12 +230,12 @@ void DoWho (tPlayer * p, istream & sArgs)
     if (pTarget->IsPlaying ())
       {
       *p << "  " << pTarget->playername << 
-            " in room " << pTarget->room << "\n";
+            " im Raum " << pTarget->room << "\n";
       ++count;
       } // end of if playing
     } // end of doing each player
   
-  *p << count << " player(s)\n";  
+  *p << count << " Spieler\n";  
 } // end of DoWho
 
 void DoSetFlag (tPlayer * p, istream & sArgs)
@@ -296,8 +296,8 @@ void DoGoTo (tPlayer * p, istream & sArgs)
   // move player
   PlayerToRoom (p, room,
                 MAKE_STRING ("You go to room " << room << "\n"),
-                p->playername + " disappears in a puff of smoke!\n",
-                p->playername + " appears in a puff of smoke!\n");
+                p->playername + " verschwindet in einer Rauchwolke!\n",
+                p->playername + " taucht mit einem Knall auf!\n");
   
   } // end of DoGoTo
   

@@ -1,0 +1,18 @@
+1000 
+Willkommen im KlieDOS.%r.
+pass 1004 wetter 1001 essen 1002 leet 1003
+1001
+Das Wetter ist awesome.%r.
+back 1000 pass 1004 essen 1002 leet 1003
+1002
+Das Essen ist awesome.%r.
+back 1000 pass 1004 wetter 1001 essen 1002 leet 1003
+1003
+Voll der leethaxor das du hier bist.%r.
+back 1000 pass 1004 wetter 1001 essen 1002 leet 1003
+1004
+Hier kannst du spaeter deinen Pass abholen.
+back 1000 pass 1004 wetter 1001 essen 1002 leet 1003
+1005
+Ich bin 1 Easteregg vong Ueberraschung her.
+back 1000 pass 1004 wetter 1001 essen 1002 leet 1003
