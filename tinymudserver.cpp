@@ -36,7 +36,7 @@ void PeriodicUpdates ()
     // send new command if it is time
   if (time (NULL) > (tLastMessage + MESSAGE_INTERVAL))
     {
-    SendToAll ("You hear creepy noises ...\n");
+    SendToAll ("Fynn rennt panisch an dir vorbei ...\n");
     tLastMessage = time (NULL);
     }
     
@@ -46,7 +46,7 @@ void PeriodicUpdates ()
 // main program
 int main ()
 {
-  cout << "Tiny MUD server version " << VERSION << endl;
+  cout << "klieDOS Server Version " << VERSION << endl;
 
   LoadThings ();    // load stuff
   
@@ -58,7 +58,7 @@ int main ()
   MainLoop ();    // handle player input/output
 
   // game over - tell them all
-  SendToAll ("\n\n** Game shut down. **\n\n");
+  SendToAll ("\n\n** Spiel wird gestoppt. **\n\n");
   
   CloseComms ();  // stop listening
 
