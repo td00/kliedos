@@ -4,7 +4,7 @@
 // configuration constants
 
 static const string VERSION = "2.2.0";        // server version
-static const int PORT = 4000;                 // incoming connections port
+static const int PORT = 1337;                 // incoming connections port
 static const string PROMPT = "> ";            // normal player prompt
 static const int INITIAL_ROOM = 1000;         // what room they start in
 static const int MAX_PASSWORD_ATTEMPTS = 3;   // times they can try a password
