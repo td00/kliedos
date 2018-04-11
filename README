@@ -1,0 +1,12 @@
+klieDOS version 0.5
+based on tinymudserver by Nick Gammon
+written by td00
+GPL or smth like that?
+
+DL & make
+
+Use telnet on port 4000 to connect
+
+Users are stored in clear text files.
+
+Dont use super secret password!
