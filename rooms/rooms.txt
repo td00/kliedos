@@ -1,18 +1,20 @@
 1000
-Schleuse (room 1000).%rDu stehst in der Schleuse.%r%rKomm herein und sieh dich um.
-n 1004
+Vor der Schleuse.%rDu stehst vor der Schleuse.%rDie Sonne scheint. Du hörst stätiges Hämmern und Sägen und das Kreischen einer Flex.%rAuf dem Hof wird wohl mal wieder etwas gebastelt.
+enter 1001 leave 1002
 1001
-Room 1001.%rYou are in room 1001. It could look better. What a let-down! This rooms has no alabaster walls, no mystic fireplace, no marble floors.
-n 1000
+Die Schleuse.%rDu stehst in der Schleuse. Jede Menge Gerümpel liegt herum. Fynns Aerotrim lehnt an der Wand, ein Fallschirm hängt gegenüber, von der Decke baumeln Lampen, ein Besen sowie ein Barhocker.%rDas Dinocar blinkt munter vor sich hin. Drei alte Autos stehen zu deiner Linken. Alle haben ihre beste Zeit hinter sich. Sieht aus wie immer. Typisch Kliemannsland eben.
+leave 1000
 1002
-Room 1002.%rYou lounge around in room 1002. The floors are carpeted with a sort of wool-nylon blend, so favoured in caverns these days. There is a corridor to the east.
-w 1000 e 1005
+Die Straße.%Auweia! Auch wenn die Straße erst letztens neu geteert wurde und wunderschön neu aussieht: Man läuft nicht einfach so auf die Straße. Runter da!
+leave 1000
 1003
-Room 1003.%rThis rooms looks as if it has been rough-hewn from the very granite that forms the basis of the world itself. Unfortunately the general effect is submerged somewhat by the presence of many audio CDs stuck to the wall with sticky tape.
+Der Hof.%rDu stehst auf dem Hof. Dein erster Eindruck: In den Videos sieht er viel größer aus. Aber dennoch ist er dir vertraut: Die Werkstätten rechts von dir, das Studio, die große Linde in der Mitte des Hofes, der Schlafsaal, der Pferdestall und das Herz. Alles da. Du hörst den Wind in den Bäumen und ein zufriedenes Grinsen macht sich in deinem Gesicht breit.
 e 1000
 1004
-Room 1004.%rThis is the training room. One day you might receive all sorts of interesting training here. Perhaps you might even purchase shields and armour. But not today.
+Das Holzlager.%rDu schiebst das Tor zur Seite und blickst auf einen riesigen Stapel Holz. Hier könnte man auch mal wieder aufräumen...
 s 1000
 1005
-Eastern corridor (room 1005).%rThis east-west corridor looks like it could be interesting to follow.
+Die Spendenwerkstatt.%rLinks von dir erstreckt sich ein ca. 1m breites und 4m langes Gerümpelfeld. Mit etwas Phantasie lässt sich darunter eine Werkbank erkennen. Untermauert wird deine Einschätzung durch die zwei Schraubstöcke, die aus dem Haufen am Rande herausragen.%rRechts von dir steht ein Regal voller angebrochenen Farbeimer und eingetrockneten Pinseln. Daneben stapeln sich etliche Stichsägen, Trennschleifer, Bohrmaschinen. Die meisten willst du lieber nicht mehr in eine Steckdose stecken.
 w 1002
+1006
+Die Funkwerkstatt.%rAlles blitzt und leuchtet. Es ist unangenehm sauber. Die Schraubendreher sind fein säuberlich sortiert. Alle Bitkästen liegen an Ort und Stelle. Die Akkus der Schrauber sind voll geladen, der Kompressor ist einsatzbereit. Die Trennscheibe der Flex wurde eben erst erneuert. Du zuckst ein bisschen zusammen, als der Butler nach deiner Jacke fragt und dir ein frisches Paar Handschuhe reicht.
