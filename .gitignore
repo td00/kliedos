@@ -10,3 +10,4 @@ Nick.player
 tinymudserver
 README.old
 *.player
+players/*.player
