@@ -270,7 +270,7 @@ void DoShutdown (tPlayer * p, istream & sArgs)
 {
   NoMore (p, sArgs);  // check no more input
   p->NeedFlag ("can_shutdown");
-  SendToAll (p->playername + " shuts down the game\n");
+  SendToAll (p->playername + " fuehrt eine Wartung durch. Wir sind gleich wieder da!\n");
   bStopNow = true;
 } // end of DoShutdown
 
@@ -364,7 +364,7 @@ void LoadCommands ()
   commandmap ["clearflag"]= DoClearFlag;  // clear a player's flag
   commandmap ["save"]     = DoSave;      // save a player
   commandmap ["chat"]     = DoChat;      // chat
-  commandmap ["emote"]    = DoEmote;     // emote
+  commandmap ["me"]    = DoEmote;     // emote
   commandmap ["who"]      = DoWho;       // who is on?
   } // end of LoadCommands
 
