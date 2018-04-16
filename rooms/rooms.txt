@@ -17,4 +17,10 @@ s 1000
 Die Spendenwerkstatt.%rLinks von dir erstreckt sich ein ca. 1m breites und 4m langes Gerümpelfeld. Mit etwas Phantasie lässt sich darunter eine Werkbank erkennen. Untermauert wird deine Einschätzung durch die zwei Schraubstöcke, die aus dem Haufen am Rande herausragen.%rRechts von dir steht ein Regal voller angebrochenen Farbeimer und eingetrockneten Pinseln. Daneben stapeln sich etliche Stichsägen, Trennschleifer, Bohrmaschinen. Die meisten willst du lieber nicht mehr in eine Steckdose stecken.
 w 1002
 1006
-Die Funkwerkstatt.%rAlles blitzt und leuchtet. Es ist unangenehm sauber. Die Schraubendreher sind fein säuberlich sortiert. Alle Bitkästen liegen an Ort und Stelle. Die Akkus der Schrauber sind voll geladen, der Kompressor ist einsatzbereit. Die Trennscheibe der Flex wurde eben erst erneuert. Du zuckst ein bisschen zusammen, als der Butler nach deiner Jacke fragt und dir ein frisches Paar Handschuhe reicht.
+Die Funkwerkstatt.%rAlles blitzt und leuchtet. Ein Engelschor erklingt. Es ist unangenehm sauber. Die Schraubendreher sind fein säuberlich sortiert. Alle Bitkästen liegen an Ort und Stelle. Die Akkus der Schrauber sind voll geladen, der Kompressor ist einsatzbereit. Die Trennscheibe der Flex wurde eben erst erneuert. Du zuckst ein bisschen zusammen, als der Butler nach deiner Jacke fragt und dir ein frisches Paar Handschuhe reicht.
+10007
+Die Nische.%rZwischen der unfassbar sauberen und gut sortierten Funkwerstatt und dem Studio befindet sich ein kleiner Durchgang. Du stehst vor einem versteckten Komposthaufen, den Jonas still und heimlich angelegt hat, außerdem riecht es komisch hier."
+10008
+Das Studio%rEin riesiges Gebaeude. Scheinwerfer haengen von der Decke. Mehrere Sets sind aufgebaut. Viele Menschen laufen hin und her. In einer der Ecken erspaehst du die Maske: Dort sitzen drei Stars des Kliemannslandes und werden fit fuer den naechsten Dreh gemacht.
+10009
+Die Regie.%rAbgetrennt im Studio befindet sich der Regieraum. Ein dicker Kabelbaum verlaesst den Raum durch die Decke. Unzaehlige Monitore haengen an den Waenden und zeigen jeden Winkel eines jeden Sets. Das Surren der Computer ist zu hören, eine große, rot leuchtende Digitalanzeige zeigt die Uhrzeit.
